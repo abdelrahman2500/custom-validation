@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <style>
+            form{
+                width: 700px;
+                border: 3px solid black;
+                padding: 20px;
+                margin: 20px auto;
+            }
+            input:focus{
+                outline: none;
+            }
+            input[type="text"].error{
+                border: 1px solid red;
+            }
+            input[type="text"].ok{
+                border: 1px solid green;
+            }
+            span{
+                text-align: center;
+                background-color: red;
+                color: #FFF;
+                padding: 5px 10px;
+                margin: 0 10px;
+                border-radius: 6px;
+                visibility: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <form method="get" class="wrapper" >
+            name : <input type="text" id="username">
+            <span id="usernamespan">U should use only characters between 4 to 10</span><br><br>
+            country : <select name="country" id="country">
+                <option name="country" value="egypt">Egypt</option>
+                <option name="country" value="spain">Spain</option>
+                <option name="country" value="uae">UAE</option>
+            </select> <br><br>
+            Zip: <input type="text" id="zip" disabled>
+            <span id="zipspan">U should choose country</span><br><br>
+            E-mail <input type="text" id="email">
+            <span id="emailspan">U should fill this feild as aa@bb.com</span><br><br>
+            Hoppies : 
+            <input type="checkbox" name="hoppy" id="" value="writimg" checked> writimg
+            <input type="checkbox" name="hoppy" id="" value="reading"> reading
+            <input type="checkbox" name="hoppy" id="" value="swimming"> swimming
+            <input type="checkbox" name="hoppy" id="" value="sleeping"> sleeping
+            <span id="hoppyspan">U should choose one hoppy at list</span><br><br>
+            <input type="submit" value="Register">
+            <input type="reset" value="Clear">
+        </form>
+
+
+        <script src="main.js"></script>
+    </body>
+</html>
